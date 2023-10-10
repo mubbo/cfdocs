@@ -1,7 +1,7 @@
 {
 	"name":"monthAsString",
 	"type":"function",
-	"syntax":"monthAsString(month_number)",
+	"syntax":"monthAsString(month_number [,locale])",
 	"returns":"string",
 	"related":["month","monthShortAsString"],
 	"description":" ",
@@ -21,6 +21,12 @@
 			"description": "",
 			"code": "getVal = monthAsString(11); \r\n writeDump(getVal);",
 			"result": "result is: November"
+		},
+		{
+			"title": "Script Syntax (Localized)",
+			"description": "Get the month string in the specified locale",
+			"code": "getVal = monthAsString(6,\"DE\"); \r\n writeDump(getVal);",
+			"result": "result is: Juni"
 		}
 	]
 }
